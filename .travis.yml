@@ -13,6 +13,7 @@ script: true
 #  - gem install logger
 deploy:
   provider: pages
+  skip_cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   dpl_version: 1.10.16
   on:
