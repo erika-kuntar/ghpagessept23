@@ -11,12 +11,17 @@ script: true
 #  - gem install bundler
 #  - gem install uri
 #  - gem install logger
-addons:
-  deploy:
-  - provider: pages
-    strategy: git
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  dpl_version: 1.10.16
+
+
+#deploy:
+#  - provider: pages
+#    strategy: git
 #  edge:
 #    branch: v2.0.5
-    github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-      on:
-    branch: main
+#    github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+#      on:
+#    branch: main
