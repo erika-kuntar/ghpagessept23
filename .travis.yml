@@ -13,7 +13,7 @@ before_deploy:
 deploy:
   provider: pages
   skip_cleanup: true
-#  github-token: "$GITHUB_TOKEN"
+  github-token: "$GITHUB_TOKEN"
   dpl_version: 1.10.16
   on:
     branch: main
