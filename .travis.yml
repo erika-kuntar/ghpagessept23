@@ -6,16 +6,16 @@ services:
 - docker
 install: skip
 script: true
-before_deploy:
-  - git remote -v            # Check the remote URL configuration
-  - git status               # View the state of the repository
-  - git log -3               # Show the last 3 commits to ensure the correct commit is being pushed
+#before_deploy:
+#  - git remote -v            # Check the remote URL configuration
+#  - git status               # View the state of the repository
+#  - git log -3               # Show the last 3 commits to ensure the correct commit is being pushed
 deploy:
-  provider: pages
+  provider: releases
   skip_cleanup: true
   github-token: "$GITHUB_TOKEN"
-  target_branch: master
-  dpl_version: 1.10.16
+#  target_branch: master
+#  dpl_version: 1.10.16
   on:
     branch: main
 #  env:
