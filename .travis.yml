@@ -12,6 +12,7 @@ before_deploy:
   - gem install bundler
   - gem install uri
   - gem install logger
+  - gem install faraday -v 1.8.0
 #before_deploy:
 #  - git remote -v            # Check the remote URL configuration
 #  - git status               # View the state of the repository
@@ -19,10 +20,11 @@ before_deploy:
 deploy:
   - provider: pages
     skip_cleanup: true
-#    overwrite: true
+#    overwrite: true* gem install faraday
+* gem install faraday-net_http
 #    draft: true
     github-token: $GITHUB_TOKEN
-    edge: true
+#    edge: true
     dpl_version: 2.0.3.beta.4
 #  target_branch: master 
     'on':
