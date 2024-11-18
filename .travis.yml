@@ -23,7 +23,7 @@ deploy:
 #    draft: true
     github-token: $GITHUB_TOKEN
 #    edge: true
-    dpl_version: 1.10.16
+#    dpl_version: 1.10.16
 #  target_branch: master 
     'on':
       branch: main
