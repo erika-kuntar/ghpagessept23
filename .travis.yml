@@ -6,11 +6,11 @@ services:
 - docker
 install: skip
 script: true
-before_deploy:
-  - yes | gem update --system --force
-  - gem install bundler
-  - gem install uri
-  - gem install logger
+#before_deploy:
+#  - yes | gem update --system --force
+#  - gem install bundler
+#  - gem install uri
+#  - gem install logger
 #before_deploy:
 #  - git remote -v            # Check the remote URL configuration
 #  - git status               # View the state of the repository
@@ -22,6 +22,7 @@ deploy:
 #    draft: true
     github-token: $GITHUB_TOKEN
 #  target_branch: master 
+    edge: true
     dpl_version: 2.0.3.beta.4
     'on':
       branch: main
