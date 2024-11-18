@@ -13,7 +13,7 @@ script: true
 deploy:
   - provider: releases
     skip_cleanup: true
-    github-token: "$GITHUB_TOKEN"
+    github-token: $GITHUB_TOKEN
 #  target_branch: master
 #  dpl_version: 1.10.16
     on:
