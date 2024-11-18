@@ -1,6 +1,7 @@
 os: linux
 language: ruby
 dist: focal
+group: previous
 #sudo: true
 services:
 - docker
@@ -22,6 +23,5 @@ deploy:
 #    draft: true
     github-token: $GITHUB_TOKEN
 #  target_branch: master 
-    group: previous
     'on':
       branch: main
