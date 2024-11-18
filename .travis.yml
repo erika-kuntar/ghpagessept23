@@ -11,10 +11,10 @@ script: true
 #  - git status               # View the state of the repository
 #  - git log -3               # Show the last 3 commits to ensure the correct commit is being pushed
 deploy:
-  - provider: releases
+  - provider: pages
     skip_cleanup: true
-    overwrite: true
-    draft: true
+#    overwrite: true
+#    draft: true
     github-token: $GITHUB_TOKEN
 #  target_branch: master
 #  dpl_version: 1.10.16
