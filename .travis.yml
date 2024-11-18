@@ -22,7 +22,6 @@ deploy:
 #    draft: true
     github-token: $GITHUB_TOKEN
 #  target_branch: master 
-    edge: true
-    dpl_version: 2.0.3.beta.4
+    group: previous
     'on':
       branch: main
