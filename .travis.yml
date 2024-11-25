@@ -5,11 +5,11 @@ services:
 - docker
 install: skip
 script: true
-before_deploy:
-  - yes | gem update --system --force
-  - gem install bundler
-  - gem install uri
-  - gem install logger
+#before_deploy:
+#  - yes | gem update --system --force
+#  - gem install bundler
+#  - gem install uri
+#  - gem install logger
 #  - gem install faraday -v 2.12.0
 #  - gem install faraday-net_http -v 3.3.0
 #before_deploy:
@@ -22,8 +22,8 @@ deploy:
 #    overwrite: true
 #    draft: true
     github-token: $GITHUB_TOKEN
-#    edge: true
-#    dpl_version: 1.10.16
+    edge: true
+    dpl_version: 2.0.5.2.beta.1
 #  target_branch: master 
     'on':
       branch: main
