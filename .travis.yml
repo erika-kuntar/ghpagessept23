@@ -6,12 +6,12 @@ services:
 - docker
 install: skip
 script: true
-#before_deploy:
-#  - yes | gem update --system --force
-#  - gem install bundler
-#  - gem install uri
-#  - gem install logger
-#  - gem install faraday -v 2.12.0
+before_deploy:
+  - yes | gem update --system --force
+  - gem install bundler
+  - gem install uri
+  - gem install logger
+  - gem install faraday -v 2.12.2
 #  - gem install faraday-net_http -v 3.3.0
 #before_deploy:
 #  - git remote -v            # Check the remote URL configuration
@@ -24,7 +24,7 @@ deploy:
 #    draft: true
     github-token: $GITHUB_TOKEN
     edge: true
-#    dpl_version: 2.0.5.2
+    dpl_version: 2.0.5.2
 #  target_branch: master 
     'on':
       branch: main
