@@ -12,6 +12,7 @@ before_deploy:
   - gem install uri
   - gem install logger
   - gem install faraday -v 2.12.2
+  - gem install json -v 2.9.0
 #  - gem install faraday-net_http -v 3.3.0
 #before_deploy:
 #  - git remote -v            # Check the remote URL configuration
