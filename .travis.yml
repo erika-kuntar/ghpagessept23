@@ -24,7 +24,7 @@ deploy:
 #    overwrite: true
 #    draft: true
     github-token: $GITHUB_TOKEN
-#    edge: true
+    edge: true
 #    dpl_version: 2.0.5.2
 #  target_branch: master 
     'on':
