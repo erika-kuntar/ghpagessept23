@@ -1,7 +1,7 @@
 os: linux
 node_js: node
 language: node_js
-dist: focal
+dist: xenial
 services:
 - docker
 install: skip
