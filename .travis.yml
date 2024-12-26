@@ -1,6 +1,7 @@
 os: linux
-node_js: node
-language: node_js
+jdk: openjdk8
+language: java
+
 dist: focal
 services:
 - docker
