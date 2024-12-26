@@ -1,15 +1,15 @@
 os: linux
 node_js: node
 language: node_js
-dist: xenial
+dist: focal
 services:
 - docker
 install: skip
 script: true
-before_deploy:
-  - yes | gem update --system --force
-  - gem install bundler
-  - gem install nokogiri -v 1.17.2
+#before_deploy:
+#  - yes | gem update --system --force
+#  - gem install bundler
+#  - gem install nokogiri -v 1.17.2
 #  - gem install uri
 #  - gem install logger
 #  - gem install faraday -v 2.12.2
