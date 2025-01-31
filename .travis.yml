@@ -25,7 +25,7 @@ deploy:
   - provider: pages
 #    skip_cleanup: true
     verbose: true
-    github_url: https://github.com/erika-kuntar/ghpagessept23.git
+    committer_from_gh: true
 #    draft: true
     github-token: $GITHUB_TOKEN
     edge: true
