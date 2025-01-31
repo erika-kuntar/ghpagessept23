@@ -8,6 +8,8 @@ install: skip
 script: true
 before_deploy:
 - git status
+- git clone https://${GITHUB_TOKEN}@github.com/erika-kuntar/ghpagessept23.git
+
 deploy:
 - provider: pages
   verbose: true
