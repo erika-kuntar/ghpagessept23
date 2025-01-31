@@ -8,8 +8,7 @@ services:
 install: skip
 script: true
 #
-before_deploy:
-  - git config user.name "erika-kuntar"
+#before_deploy:
 #  - yes | gem update --system --force
 #  - gem install bundler
 #  - gem install nokogiri -v 1.17.2
@@ -18,14 +17,15 @@ before_deploy:
 #  - gem install faraday -v 2.12.2
 #  - gem install json -v 2.9.0
 #  - gem install faraday-net_http -v 3.3.0
-#before_deploy:
+before_deploy:
 #  - git remote -v            # Check the remote URL configuration
-#  - git status               # View the state of the repository
+  - git status               # View the state of the repository
 #  - git log -3               # Show the last 3 commits to ensure the correct commit is being pushed
 deploy:
   - provider: pages
     skip_cleanup: true
 #    overwrite: true
+    github_url: https://erika-kuntar:$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
 #    draft: true
     github-token: $GITHUB_TOKEN
     edge: true
