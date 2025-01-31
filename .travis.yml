@@ -23,9 +23,9 @@ before_deploy:
 #  - git log -3               # Show the last 3 commits to ensure the correct commit is being pushed
 deploy:
   - provider: pages
-    skip_cleanup: true
-#    overwrite: true
-    github_url: https://erika-kuntar:$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
+#    skip_cleanup: true
+    verbose: true
+    github_url: https://github.com/erika-kuntar/ghpagessept23.git
 #    draft: true
     github-token: $GITHUB_TOKEN
     edge: true
