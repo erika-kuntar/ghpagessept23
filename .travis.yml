@@ -8,7 +8,8 @@ services:
 install: skip
 script: true
 #
-#before_deploy:
+before_deploy:
+  - git config user.name "erika-kuntar"
 #  - yes | gem update --system --force
 #  - gem install bundler
 #  - gem install nokogiri -v 1.17.2
@@ -26,7 +27,6 @@ deploy:
     skip_cleanup: true
 #    overwrite: true
 #    draft: true
-    github-username: erika-kuntar
     github-token: $GITHUB_TOKEN
     edge: true
     dpl_version: 2.0.5.3
