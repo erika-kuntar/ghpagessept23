@@ -1,7 +1,7 @@
 os: linux
 jdk: openjdk8
 language: java
-dist: focal
+dist: jammy
 services:
 - docker
 install: skip
@@ -9,7 +9,8 @@ script: true
 before_deploy:
 - git status
 - git clone https://${GITHUB_TOKEN}@github.com/erika-kuntar/ghpagessept23.git
-
+- git remote add origin-pages https://${GH_TOKEN}@github.com/erika-kuntar/ghpagessept23.git > /dev/null 2>&1
+- git push --set-upstream origin-pages gh-pages 
 deploy:
 - provider: pages
   verbose: true
