@@ -8,7 +8,9 @@ install: skip
 
 script: true
 before_script:
- - git remote set-url origin https://$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
+- git config --global user.name "erika-kuntar"
+- git config --global user.email "50891145+erika-kuntar@users.noreply.github.com"
+- git remote set-url origin https://$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
 #
 #before_deploy:
 #- git remote -v
