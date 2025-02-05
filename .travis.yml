@@ -5,6 +5,9 @@ dist: jammy
 #services:
 #- docker
 install: skip
+before_script:
+  - rm -rf ~/.rvm/gems/*/gems/dpl*
+  - gem install dpl --pre
 script: true
 #before_deploy:
 #- git status
