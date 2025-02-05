@@ -10,6 +10,8 @@ script: true
 #
 before_deploy:
 - git remote -v
+- git fetch -v
+- git push -v
 - git push --dry-run https://$GH_TOKEN@github.com/erika-kuntar/ghpagessept23.git HEAD:master
 
 #- git status
