@@ -11,7 +11,7 @@ script: true
 before_deploy:
 - git remote -v
 - git fetch -v
-- git push origin HEAD:main
+#- git push origin HEAD:main
 - git push --dry-run https://$GH_TOKEN@github.com/erika-kuntar/ghpagessept23.git HEAD:master
 
 #- git status
@@ -21,14 +21,14 @@ before_deploy:
 #- git add .
 #- git commit --message "test"
 #- git push --set-upstream origin-pages gh-pages 
-deploy:
-- provider: pages
-  verbose: true
-  github-token: "$GITHUB_TOKEN"
-  edge: true
+#deploy:
+#- provider: pages
+#  verbose: true
+#  github-token: "$GITHUB_TOKEN"
+#  edge: true
 #  dpl_version: 2.0.5.3
-  on:
-    branch: main
+#  on:
+#    branch: main
 env:
   global:
     secure: dx6cNHl2JUQd0XScPA1IFNb4stojP5RU0DeX6TRQb8K6CgLLSlnj5/cCoC8mGIdMPJyFVjElQshcJAQrJChQdIgQpyjD7iEoZs4YkVFLPIvy1lxEH1BCbyeoDIOnLdX3mRo2Lg+Tw5nBF7bt2XGX2OXbYfk/BBJwaDhypRes/p9XZl6na6jBTXlSDCrH4hnHj4nlibfAZ2SAy6IzrIZDS7X+5JZZY13LU7ksOou1bTGjEQkuMdb8wWvGivHH00OR0h556737RKE1rLbOglTYGqMAhl76phQyUqg7o+RPfeh/Q4G9W3yJhQqhfW9u1x9sTU6SSij7Fz8EkfffalB6fZ6bq4awOMgJM+ispn5/1XzXNnqefpFA/w5WszJsbJ0JofI8DcCDObrwImvf/LhNd8JbaLEJAF8ubk1cwnJH0sH85x9JdY6mdMSKBggk6caPFQhrtt6NeCU5UrXhYN+1uMQrmvy3EKQIDayQeUVQcrPqgJEJ75nSJvsUHr4aPYv/cjQQJwb/ncf8kjDysvycLt+mRhluV0owoJ5zJwW9qRYE/TLzhVyczeSOKd/GjfL0Bkb618Cd3iWq0XaiQqyl9hYkU2qnttK7XwYreew9Z4r5RZflfLo1BrUJTswKCamS2amCCq/RPGxHyWx+7HCWZ6eDLt2id9HDiFKZ7pG4ZuY=
