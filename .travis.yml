@@ -11,7 +11,7 @@ script: true
 before_deploy:
 - git remote -v
 - git push --dry-run https://$GH_TOKEN@github.com/erika-kuntar/ghpagessept23.git HEAD:master
-#
+
 #- git status
 #- git clone https://${GITHUB_TOKEN}@github.com/erika-kuntar/ghpagessept23.git
 #- git remote add origin-pages https://${GH_TOKEN}@github.com/erika-kuntar/ghpagessept23.git > /dev/null 2>&1
