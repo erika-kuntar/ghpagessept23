@@ -9,6 +9,7 @@ before_script:
   - rm -rf ~/.rvm/gems/*/gems/dpl*
   - gem install dpl --pre
 script: true
+#
 #before_deploy:
 #- git status
 #- git clone https://${GITHUB_TOKEN}@github.com/erika-kuntar/ghpagessept23.git
