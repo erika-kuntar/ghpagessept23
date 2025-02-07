@@ -7,10 +7,10 @@ dist: jammy
 install: skip
 
 script: true
-before_script:
-- git config --global user.name "travis"
-- git config --global user.email "travis@users.noreply.github.com"
-- git remote set-url origin https://$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
+#before_script:
+#- git config --global user.name "travis"
+#- git config --global user.email "travis@users.noreply.github.com"
+#- git remote set-url origin https://$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
 #
 #before_deploy:
 #- git remote -v
@@ -29,7 +29,7 @@ before_script:
 deploy:
 - provider: pages
   verbose: true
-  github-token: "$GITHUB_TOKEN"
+#  github-token: "$GITHUB_TOKEN"
   edge: true
   dpl_version: 2.0.5.3
   on:
