@@ -18,7 +18,7 @@ before_deploy:
 - git remote -v
 #- git fetch -v
 #- git push origin HEAD:main
-- git push --dry-run https://erika-kuntar:$GH_TOKEN@github.com/erika-kuntar/ghpagessept23.git HEAD:master
+- git push --dry-run --verbose https://erika-kuntar:$GH_TOKEN@github.com/erika-kuntar/ghpagessept23.git HEAD:master
 #before_script:
 # - git remote set-url origin https://$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
 #- git status
