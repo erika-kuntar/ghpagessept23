@@ -1,0 +1,39 @@
+os: linux
+jdk: openjdk8
+language: java
+dist: jammy
+#services:
+#- docker
+install: skip
+
+script: true
+#before_script:
+#- git config --global user.name "travis"
+#- git config --global user.email "travis@users.noreply.github.com"
+#- git remote set-url origin https://$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
+#
+before_deploy:
+#- git config --global credential.helper store
+#- git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+- git remote -v
+#- git fetch -v
+#- git push origin HEAD:main
+- git push --dry-run --verbose https://erika-kuntar:$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git HEAD:main
+#before_script:
+# - git remote set-url origin https://$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
+#- git status
+#- git clone https://${GITHUB_TOKEN}@github.com/erika-kuntar/ghpagessept23.git
+#- git remote add origin-pages https://${GH_TOKEN}@github.com/erika-kuntar/ghpagessept23.git > /dev/null 2>&1
+#- git checkout -b gh-pages
+#- git add .
+#- git commit --message "test"
+#- git push --set-upstream origin-pages gh-pages 
+deploy:
+- provider: pages
+  verbose: true
+  github-token: "$GITHUB_TOKEN"
+  edge: true
+  dpl_version: 2.0.5.3
+  on:
+    branch: main
+
