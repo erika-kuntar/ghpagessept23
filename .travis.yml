@@ -29,12 +29,22 @@ before_deploy:
 #- git commit --message "test"
 #- git push --set-upstream origin-pages gh-pages 
 deploy:
-- provider: pages
-  verbose: true
-  github-token: "$GITHUB_TOKEN"
+#- provider: pages
+#  verbose: true
+#  github-token: "$GITHUB_TOKEN"
 #  edge: true
 #  dpl_version: 2.0.5.3
-  on:
-    branch: main
+#  on:
+#    branch: main
+
+
+- provider: s3
+  access_key_id: $SECRET_KEY_ID
+  secret_access_key: $SECRET_ACCESS_KEY
+  skip_cleanup: true
+  'on':
+    branch:
+    - mar24
+
 
 #testing
