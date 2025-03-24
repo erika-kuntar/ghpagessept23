@@ -1,5 +1,5 @@
 os: linux
-jdk: openjdk8
+jdk: openjdk11
 language: java
 dist: jammy
 #services:
