@@ -43,6 +43,7 @@ deploy:
   secret_access_key: $SECRET_ACCESS_KEY
   skip_cleanup: true
   edge: true
+  bucket: $BUCKET
   'on':
     branch:
     - mar24
