@@ -32,8 +32,8 @@ deploy:
 - provider: pages
   verbose: true
   github-token: "$GITHUB_TOKEN"
-  edge: true
-  dpl_version: 2.0.5.3
+#  edge: true
+#  dpl_version: 2.0.5.3
   on:
     branch: main
 
