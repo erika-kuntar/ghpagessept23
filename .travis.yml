@@ -45,19 +45,19 @@ script: true
 
 before_install:
 #- gem update --system
-#- yes | gem update --system --force
+- yes | gem update --system --force
 #- gem install bundler
 #- gem install uri
 #- gem install bundler -v 2.5.16 
-# gem install logger -v 1.6.4
+ gem install logger -v 1.6.5
 #- gem install faraday -v 2.12.0
 deploy: 
 - provider: s3
   access_key_id: "$SECRET_KEY_ID"
   secret_access_key: "$SECRET_ACCESS_KEY"
 #  skip_cleanup: true
-  edge: true
-  dpl_version: 2.0.5.3
+#  edge: true
+#  dpl_version: 2.0.5.3
   bucket: "$BUCKET"
   'on':
     branch:
