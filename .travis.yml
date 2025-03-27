@@ -21,7 +21,7 @@ script: true
 #- git push origin HEAD:main
 #- git push --dry-run --verbose https://erika-kuntar:$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git HEAD:main
 #before_script:
--bundle --version
+
 # - git remote set-url origin https://$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
 #- git status
 #- git clone https://${GITHUB_TOKEN}@github.com/erika-kuntar/ghpagessept23.git
