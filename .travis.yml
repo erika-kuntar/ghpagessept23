@@ -50,6 +50,7 @@ before_install:
 #- gem install uri
 - gem install bundler -v 2.5.9
 #- gem install logger 
+- gem install mime-types -v 3.6.0
 #- gem install faraday -v 2.12.0
 
 
