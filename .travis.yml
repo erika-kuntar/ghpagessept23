@@ -48,7 +48,7 @@ before_install:
 #- yes | gem update --system --force
 #- gem install bundler
 #- gem install uri
-- gem install bundler -v 2.6.0
+- gem install bundler -v 2.5.16 
 # gem install logger -v 1.6.4
 #- gem install faraday -v 2.12.0
 deploy: 
