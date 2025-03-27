@@ -36,8 +36,13 @@ before_deploy:
 #  dpl_version: 2.0.5.3
 #  on:
 #    branch: main
-before_install:
+#before_install:
+#- gem install bundler
+before_deploy:
+- yes | gem update --system --force
 - gem install bundler
+- gem install uri
+- gem install logger
 deploy: 
 - provider: s3
   access_key_id: "$SECRET_KEY_ID"
