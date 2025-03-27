@@ -1,6 +1,6 @@
 os: linux
-jdk: openjdk11
-language: java
+#jdk: openjdk11
+#language: java
 dist: jammy
 #services:
 #- docker
@@ -36,7 +36,8 @@ deploy:
 #  dpl_version: 2.0.5.3
 #  on:
 #    branch: main
-
+before_install:
+- gem install bundler
 
 - provider: s3
   access_key_id: $SECRET_KEY_ID
