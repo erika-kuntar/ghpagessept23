@@ -40,11 +40,11 @@ before_install:
 - gem install bundler
 
 - provider: s3
-  access_key_id: $SECRET_KEY_ID
-  secret_access_key: $SECRET_ACCESS_KEY
+  access_key_id: "$SECRET_KEY_ID"
+  secret_access_key: "$SECRET_ACCESS_KEY"
   skip_cleanup: true
 #  edge: true
-  bucket: $BUCKET
+  bucket: "$BUCKET"
   'on':
     branch:
     - mar24
