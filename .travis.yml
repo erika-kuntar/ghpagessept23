@@ -49,7 +49,7 @@ before_install:
 - gem install bundler
 - gem install uri
 #- gem install bundler -v 2.6.0
-- bundle exec gem install logger 
+- gem install logger 
 - gem install faraday -v 2.12.0
 
 
