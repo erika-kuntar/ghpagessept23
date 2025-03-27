@@ -13,10 +13,10 @@ script: true
 #- git config --global user.email "travis@users.noreply.github.com"
 #- git remote set-url origin https://$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git
 
-before_deploy:
+#before_deploy:
 #- git config --global credential.helper store
 #- git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
-- git remote -v
+#- git remote -v
 #- git fetch -v
 #- git push origin HEAD:main
 #- git push --dry-run --verbose https://erika-kuntar:$GITHUB_TOKEN@github.com/erika-kuntar/ghpagessept23.git HEAD:main
