@@ -1,7 +1,7 @@
 os: linux
 #jdk: openjdk11
 #language: java
-dist: jammy
+dist: xenial
 #services:
 #- docker
 
@@ -46,6 +46,7 @@ before_deploy:
 - gem install bundler
 - gem install uri
 - gem install logger
+- gem install faraday -v 2.12.0
 deploy: 
 - provider: s3
   access_key_id: "$SECRET_KEY_ID"
