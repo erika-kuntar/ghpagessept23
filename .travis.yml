@@ -28,6 +28,11 @@ before_deploy:
 #- git add .
 #- git commit --message "test"
 #- git push --set-upstream origin-pages gh-pages 
+before_deploy:
+- yes | gem update --system --force
+- gem install bundler
+- gem install uri
+- gem install logger
 deploy:
 - provider: pages
   verbose: true
