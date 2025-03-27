@@ -47,11 +47,11 @@ before_install:
 #- gem update --system
 - yes | gem update --system --force
 #- gem install bundler
-#- gem install uri
+- gem install uri
 #- gem install bundler -v 2.6.0
-- bundle exec gem install logger -v 1.6.6
-#- gem install faraday -v 2.12.0
-- gem install aws-sdk-core -v 3.220.2
+- bundle exec gem install logger 
+- gem install faraday -v 2.12.0
+
 
 deploy: 
 - provider: s3
