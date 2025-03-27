@@ -45,7 +45,7 @@ before_deploy:
 #- yes | gem update --system --force
 - gem install bundler
 - gem install uri
-- gem install logger -v 1.6.6
+- gem install logger -v 1.6.4
 - gem install faraday -v 2.12.0
 deploy: 
 - provider: s3
