@@ -41,12 +41,9 @@ script: true
 #- gem install bundler
 
 
-before_deploy:
-- yes | gem update --system --force
-- gem install bundler
-#- gem install uri
-#- gem install logger 
-- gem install faraday -v 2.12.0
+
+before_install:
+    - gem update --system
 deploy: 
 - provider: s3
   access_key_id: "$SECRET_KEY_ID"
