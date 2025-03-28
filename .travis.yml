@@ -49,7 +49,8 @@ before_deploy:
 #- gem install bundler
 #- gem install uri
 #- gem install bundler -v 2.5.9
-- dpl rubygems gem install logger -v 1.6.6
+- gem install dpl --pre
+- dpl rubygems --gem install logger -v 1.6.6
 #- gem install mime-types -v 3.6.0
 #- gem install faraday -v 2.12.0
 
