@@ -43,14 +43,14 @@ script: true
 
 
 
-before_install:
+before_deploy:
 #- gem update --system
-- yes | gem update --system --force
+#- yes | gem update --system --force
 #- gem install bundler
 #- gem install uri
-- gem install bundler -v 2.5.9
-#- gem install logger 
-- gem install mime-types -v 3.6.0
+#- gem install bundler -v 2.5.9
+- dpl rubygems gem install logger -v 1.6.6
+#- gem install mime-types -v 3.6.0
 #- gem install faraday -v 2.12.0
 
 
