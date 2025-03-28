@@ -52,7 +52,7 @@ before_deploy:
 - gem install dpl --pre
 - dpl rubygems --gem install bundler -v 2.5.9
 - dpl rubygems --gem install logger -v 1.7.0
-
+- rvm use $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl --pre && dpl rubygems --gem install logger -v 1.7.0
 #- gem install mime-types -v 3.6.0
 #- gem install faraday -v 2.12.0
 
